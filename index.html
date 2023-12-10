@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="librarySystemJS.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Catalog Creator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header style="background: url('images/bookshelf-header.jpg'); background-size: cover">Search The Book</header> 
+    <div class="container">
+        <div id="functionButtons" class="flexBox">
+            <h3>Function Buttons</h3>
+            <button id="createEntry">Create New Entry</button>
+            <button id="readBook">Read Selected Book</button>
+            <button id="updateBook">Update Selected Book</button>
+            <button id="deleteBook">Delete Selected Book</button>
+            <button id="addSearch">Add Current Search Result</button>
+        </div>
+        <div id="controlPanel" class="flexBox">
+            <h2>Control&nbsp;Panel</h2>
+            <h3>Search</h3>
+            <div class="search_bar">Search Here:
+                <input type="text" id="bookSearchName" name="book"/>
+                <button id="bookSearchButton">Go</button>
+            </div>
+            <h3>Entry Options</h3>
+            <div class="search_bar">Title:
+                <input type="text" id="bookTitle"/>
+            </div>
+            <div class="search_bar">Related Subjects:
+                <input type="text" id="relatedSubject"/>
+            </div>
+            <div class="search_bar">Author Name:
+                <input type="text" id="authorName"/>
+            </div>
+            <div class="search_bar">ISBN:
+                <input type="text" id="isbnNum"/>
+            </div>
+        </div>
+        <div id="libraryCatalogList" class="flexBox">
+            <h2>Catalog&nbsp;List</h2>
+            <div class="list">
+                <select id="bookList" name="books" size="5" style="height: 500px; width: 400px; text-align: center"></select>
+            </div>
+        </div>
+        <div id="bookDisplay" class="flexBox">
+            <h2>Book&nbsp;Display</h2>
+            <h3 id="bookName"></h3>
+            <h3 id="subject"></h3>
+            <h3 id="author"></h3>
+            <h3 id="isbn"></h3>
+        </div>
+    </div>
+</body>
+</html>
